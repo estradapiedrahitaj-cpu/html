@@ -361,6 +361,7 @@ body {
     position: absolute;
     width: 80%;
     max-width: 500px;
+    bottom: 2rem;
     text-align: center;
     color: white;
     z-index: 40;
@@ -562,4 +563,5 @@ button:disabled {
         max-width: 280px;
         max-height: 280px;
     }
+
 }
