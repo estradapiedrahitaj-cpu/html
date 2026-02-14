@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Ti ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Música de fondo -->
+<audio id="musica" autoplay loop>
+    <source src="musica.mp3" type="audio/mp3">
+</audio>
+
+<!-- Contenedor de estrellas -->
+<div class="estrellas"></div>
+
+<!-- Contenedor principal -->
+<div class="contenedor">
+    
+    <!-- El corazón principal (clickeable) -->
+    <div class="corazon" id="corazon"></div>
+    
+ 
+    <!-- Contenedor de rosas que crecen desde abajo -->
+    <div class="jardin-rosas" id="jardinRosas">
+           <div style="top: -2rem;bottom: 0px;height: 4.5rem !important;font-size: 3rem;color: papayawhip;
+    position: absolute;">Abre las rosas</div>
+        <!-- Rosa 1 -->
+        <div class="rosa-contenedor rosaBotom1" data-pagina="2">
+            <div class="rosa rosa1">
+                <div class="petalos">
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                </div>
+                <div class="centro-rosa"></div>
+                <div class="tallo"></div>
+                <div class="hoja hoja-izq"></div>
+                <div class="hoja hoja-der"></div>
+            </div>
+            <div class="etiqueta">Te aprecio</div>
+        </div>
+
+        <!-- Rosa 2 -->
+        <div class="rosa-contenedor rosaBotom2" data-pagina="3">
+            <div class="rosa rosa2">
+                <div class="petalos">
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                </div>
+                <div class="centro-rosa"></div>
+                <div class="tallo"></div>
+                <div class="hoja hoja-izq"></div>
+                <div class="hoja hoja-der"></div>
+            </div>
+            <div class="etiqueta">Me encantas</div>
+        </div>
+
+        <!-- Rosa 3 (Central - más grande) -->
+        <div class="rosa-contenedor rosaBotom3 rosa-central" data-pagina="4">
+            <div class="rosa rosa3">
+                <div class="petalos">
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                </div>
+                <div class="centro-rosa"></div>
+                <div class="tallo"></div>
+                <div class="hoja hoja-izq"></div>
+                <div class="hoja hoja-der"></div>
+            </div>
+            <div class="etiqueta">Me completas</div>
+        </div>
+
+        <!-- Rosa 4 -->
+        <div class="rosa-contenedor rosaBotom4" data-pagina="5">
+            <div class="rosa rosa4">
+                <div class="petalos">
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                </div>
+                <div class="centro-rosa"></div>
+                <div class="tallo"></div>
+                <div class="hoja hoja-izq"></div>
+                <div class="hoja hoja-der"></div>
+            </div>
+            <div class="etiqueta">Eres mi todo</div>
+        </div>
+
+        <!-- Rosa 5 -->
+        <div class="rosa-contenedor rosaBotom5" data-pagina="6">
+            <div class="rosa rosa5">
+                <div class="petalos">
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                    <div class="petalo"></div>
+                </div>
+                <div class="centro-rosa"></div>
+                <div class="tallo"></div>
+                <div class="hoja hoja-izq"></div>
+                <div class="hoja hoja-der"></div>
+            </div>
+            <div class="etiqueta">Te Amo</div>
+        </div>
+    </div>
+    
+    <!-- Contenido de texto que aparece sobre el corazón -->
+    <div class="contenido-texto" id="contenido">
+        
+        <!-- Página 1 (Inicio) -->
+        <div class="pagina activa" id="pagina1">
+            <h1>Para Ti ❤️</h1>
+            <p>Un regalo especial hecho con amor</p>
+            <p class="instruccion">✨ Haz click en el corazón ✨</p>
+        </div>
+
+        <!-- Página 2 - Primera Rosa -->
+        <div class="pagina" id="pagina2">
+            <h2>Nuestro Primer Encuentro 💕</h2>
+            <img src="img4.jpg" alt="Nosotros">
+            <p>Desde el primer momento supe que eras especial...</p>
+        </div>
+
+        <!-- Página 3 - Segunda Rosa -->
+        <div class="pagina" id="pagina3">
+            <h2>Contigo Aprendí a Amar 💖</h2>
+            <img src="img1.jpg" alt="Momentos">
+            <p>Cada día a tu lado es una aventura maravillosa</p>
+        </div>
+
+        <!-- Página 4 - Rosa Central -->
+        <div class="pagina" id="pagina4">
+            <h2>Eres Mi Mundo 🌹</h2>
+            <img src="img3.jpg" alt="Juntos">
+            <p>Eres mi lugar favorito, mi hogar, mi todo</p>
+        </div>
+
+        <!-- Página 5 - Cuarta Rosa -->
+        <div class="pagina" id="pagina5">
+            <h2>Gracias Por Todo ✨</h2>
+            <img src="img2.jpg" alt="Recuerdos">
+            <p>Gracias por cada sonrisa, cada abrazo, cada momento</p>
+        </div>
+
+        <!-- Página 6 - Quinta Rosa (Final) -->
+        <div class="pagina" id="pagina6">
+            <h1>Te Amo 💖</h1>
+            <p>Hoy, mañana y siempre...</p>
+            <p class="firma">Con todo mi corazón 💫</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Botones de navegación -->
+<div class="botones" id="botones">
+    <button onclick="paginaAnterior()" id="btnAnterior">❮ Anterior</button>
+    <button onclick="paginaSiguiente()" id="btnSiguiente">Siguiente ❯
+</div>
+
+<!-- Cargar el JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
